@@ -6,10 +6,11 @@ function SignUpForm({setToken}){
     const[error,setError] = useState([])
     const[submitting,setSubmitting] = useState(false)
 
+    //form validation
     const validateForm = () => {
         const error = []
 
-        // Check if password is empty
+        // Check if password is 8 character long
         if(password.length < 8){
             error.password = "Password should be at least 8 characters long"
         }
