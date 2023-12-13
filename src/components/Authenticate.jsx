@@ -22,8 +22,8 @@ function Authenticate({token,setUsername,username}){
     return(
         <>
             <h2>Authenticate</h2>
-            {successMessage && <p>{successMessage}</p>}
-            {error && <p>{error}</p>}
+            {successMessage && <p className="success">{successMessage}</p>}
+            {error && <p className="error">{error}</p>}
             <h3>{username}</h3>
             <button onClick={handleClick}>Authenticate Token</button>
         </>
